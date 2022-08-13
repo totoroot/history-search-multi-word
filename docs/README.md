@@ -9,7 +9,7 @@
   History entries that match all keywords will be found and syntax highlighted.
 </p></h2>
 </p></h3>
-<p align="center"><a href="https://asciinema.org/a/155704" target="_blank"><img src="https://asciinema.org/a/155704.svg" alt="ASCIInema Colored Zsh History – context of command demo" /></a></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/59910950/182902165-a2e82ec4-c4e8-49a7-a83f-036e0a698655.gif" alt="ASCIInema Colored Zsh History – context of command demo" /></p>
 <p align="center"><a href="../LICENSE" target="_blank">
   <img align="center" src="https://img.shields.io/badge/license-GNU%20GPL%20version%203-blue.svg?style=flat-square" alt="License (GPL version 3)">
 </a>
@@ -102,9 +102,16 @@ Add `zi load z-shell/H-S-MW` to your `~/.zshrc` file. ZI will handle cloning the
 
 ### [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) (OMZ)
 
-1. `cd ~/.oh-my-zsh/custom/plugins`
-2. `git clone git@github.com:z-shell/H-S-MW.git`
-3. Add `H-S-MW` to your plugin list
+1. Run this command to clone and mv to the ~/.oh-my-zsh/custom/plugins directory
+
+   ```zsh
+   git clone https://github.com/z-shell/H-S-MW.git \
+    ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/H-S-MW
+   ```
+
+2. Add `H-S-MW` to your plugin list in the ~/.zshrc file
+
+   `plugins=(... H-S-MW)`
 
 ### [Zinit](https://github.com/zdharma-continuum/zinit)
 
